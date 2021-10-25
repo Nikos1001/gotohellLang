@@ -1,0 +1,4 @@
+10 | floppy word 100 : insert word : write 100000 : spin : goto 20
+20 | get chr : write chr : goto 30 - 10 * ((chr - 33) / 64)
+30 | read val : goto 30 + 10 * (val / 100000)
+40 | read chr : print chr : goto 40 - 10 * (1 - ((chr - 33) / 64))

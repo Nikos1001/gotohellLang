@@ -1,0 +1,4 @@
+10 | get a : goto 20
+20 | a = a - 48 : goto 30
+30 | print 48 + a : goto 40 - 10 * a
+40 | end

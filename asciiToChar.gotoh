@@ -1,0 +1,6 @@
+10 | number = 0 : goto 20
+20 | get c : goto 30
+30 | goto 40 + 10 * ((c - 33) / 15)
+40 | goto 1000
+50 | number = 10 * number + c - 48 : goto 20
+1000 | print number : print 10 : goto 10

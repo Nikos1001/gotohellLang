@@ -1,0 +1,7 @@
+10 | floppy word 100 : insert word : write 10000 : spin : goto 20
+20 | get chr : write chr : goto 30 - 10 * ((chr - 33) / 64)
+30 | timer = 98 : goto 40
+40 | timer = timer - 1 : goto 50 - 10 * ((99 + timer) / 100)
+50 | read chr : print chr : timer = 98 : goto 40 + 20 * (chr / 10000)
+60 | print 10 : goto 70
+70 | end

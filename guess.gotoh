@@ -1,0 +1,19 @@
+1 | floppy rng 100 : insert rng : x = 1 : write x : spin : goto 2
+2 | x = x + 1 : read currNum : write x : goto 2 + (currNum + 999) / 1000
+3 | goto 10
+10 | read num : goto 20
+20 | print 71 : print 117 : print 101 : print 115 : print 115 : print 32 : print 109 : print 121 : print 32 : print 110 : print 117 : print 109 : print 98 : print 101 : print 114 : print 33 : print 10 : goto 30
+30 | guess = 0 : goto 40
+40 | get chr : goto 50
+50 | goto 60 + 10 * ((chr - 33) / 15)
+60 | goto 80
+70 | guess = 10 * guess + chr - 48 : goto 40
+80 | goto 90 + 10 * ((guess - num + 1000) / 1000)
+90 | print 84 : print 111 : print 111 : print 32 : print 108 : print 111 : print 119 : print 33 : print 10 : goto 30
+100 | goto 110 + 10 * ((num - guess + 1000) / 1000)
+110 | print 84 : print 111 : print 111 : print 32 : print 104 : print 105 : print 103 : print 104 : print 33 : print 10 : goto 30
+120 | print 89 : print 97 : print 121 : print 33 : print 32 : print 67 : print 111 : print 114 : print 114 : print 101 : print 99 : print 116 : print 33 : print 10 : goto 130
+130 | print 65 : print 110 : print 111 : print 116 : print 104 : print 101 : print 114 : print 32 : print 103 : print 97 : print 109 : print 101 : print 63 : print 32 : print 91 : print 121 : print 47 : print 110 : print 93 : print 10 : goto 140
+140 | get chr : goto 150 + 10 * ((chr - 110) / 11)
+150 | end
+160 | goto 10

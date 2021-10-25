@@ -1,0 +1,18 @@
+10 | units = 1 : tens = 0 : goto 20
+20 | modThree = 3 + units + 10 * tens : goto 30
+30 | modThree = modThree - 3 : goto 40 - 10 * ((997 + modThree) / 1000)
+40 | modFive = 5 + units + 10 * tens : goto 50
+50 | modFive = modFive - 5 : goto 60 - 10 * ((995 + modFive) / 1000)
+60 | goto 100 + 100 * ((999 + modThree * modFive) / 1000)
+100 | goto 110 + 10 * ((999 + modThree) / 1000)
+110 | print 70 : print 105 : print 122 : print 122 : goto 120
+120 | goto 130 + 10 * ((999 + modFive) / 1000)
+130 | print 66 : print 117 : print 122 : print 122 : goto 140
+140 | print 33 : print 10 : goto 300
+200 | print tens + 48 : print units + 48 : print 10 : goto 300
+300 | units = units + 1 : goto 310 + 10 * ((990 + units) / 1000)
+310 | goto 330
+320 | units = 0 : tens = tens + 1 : goto 330
+330 | goto 340 + 10 * ((990 + tens) / 1000)
+340 | goto 20
+350 | end

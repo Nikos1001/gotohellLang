@@ -1,9 +1,13 @@
-
+#! python3
 import tokenizer
 import parser
 import sys
 
-file = open('guess.esolang')
+if len(sys.argv) == 1:
+    print('provide a filepath.', file=sys.stderr)
+    quit(-1)
+
+file = open(sys.argv[1])
 source = file.read()
 
 tokenizer.init(source)

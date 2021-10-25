@@ -7,7 +7,7 @@ Lines of code in GotoHell consist of their line number, followed by a `|`, follo
 Execution starts on the line with the smallest number. Note that after a line is done executing, it does not automatically go to the next line.
 
 GotoHell has the following commands:
-``
+```
 print <expression> -> prints the value of the expression as an ASCII character
 get <varname> -> gets a character of user input, and saves it's ASCII code to the given varname 
 goto <expression> -> goes to the line numbered with the value of the expression
@@ -18,4 +18,4 @@ spin -> begins spinning the disk
 stop -> stops spinning the disk
 read <varname> -> reads the value at the floppy disk read head to a variable
 write <expression> -> writes the value of the expression to the floppy disk read head
-``
+```
